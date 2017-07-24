@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>Label</key>
 	<string>com.apple.periodic-daily</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/libexec/periodic-wrapper</string>
+		<string>/usr/sbin/periodic</string>
 		<string>daily</string>
 	</array>
 	<key>LowPriorityIO</key>
 	<true/>
 	<key>Nice</key>
 	<integer>1</integer>
-	<key>LaunchEvents</key>
+	<key>StartCalendarInterval</key>
 	<dict>
-		<key>com.apple.xpc.activity</key>
-		<dict>
-			<key>com.apple.periodic-daily</key>
-			<dict>
-				<key>Interval</key>
-				<integer>86400</integer>
-				<key>GracePeriod</key>
-				<integer>14400</integer>
-				<key>Priority</key>
-				<string>Maintenance</string>
-				<key>AllowBattery</key>
-				<false/>
-				<key>Repeating</key>
-				<true/>
-			</dict>
-		</dict>
+		<key>Hour</key>
+		<integer>3</integer>
+		<key>Minute</key>
+		<integer>15</integer>
 	</dict>
 	<key>AbandonProcessGroup</key>
 	<true/>
