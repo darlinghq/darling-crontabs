@@ -14,3 +14,5 @@ install(FILES
 
 install(DIRECTORY daily weekly monthly DESTINATION libexec/darling/etc/periodic)
 
+install(FILES newsyslog.conf DESTINATION libexec/darling/etc)
+
