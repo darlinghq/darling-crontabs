@@ -8,7 +8,6 @@ install(FILES
 	LaunchDaemons/com.apple.periodic-daily.plist
 	LaunchDaemons/com.apple.periodic-monthly.plist
 	LaunchDaemons/com.apple.periodic-weekly.plist
-	LaunchDaemons/com.apple.var-db-dslocal-backup.plist
 
 	DESTINATION libexec/darling/System/Library/LaunchDaemons)
 
