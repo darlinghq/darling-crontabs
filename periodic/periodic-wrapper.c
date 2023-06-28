@@ -7,6 +7,9 @@
 #include <xpc/private.h>
 #include <asl.h>
 #include <vproc_priv.h>
+#ifdef DARLING
+#include <spawn.h>
+#endif
 
 extern char **environ;
 
